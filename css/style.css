@@ -1,0 +1,108 @@
+body {
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type='submit'],
+input[type='button'],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type='submit'],
+input[type='button'],
+button,
+.ba-button {
+  display: inline-block;
+}
+input[type='submit']:hover,
+input[type='button']:hover,
+button:hover,
+.ba-button:hover {
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+textarea:focus,
+select:focus {
+}
+textarea {
+}
+
+.ba-main {
+  padding: 100px 0;
+}
+
+.ba-desk {
+  padding: 50px;
+  width: 100%;
+  background: #ead8c0;
+}
+
+.ba-desk__row {
+  display: flex;
+}
+
+.ba-desk .ba-desk__row:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.ba-desc__col {
+  width: 12.5%;
+}
+
+.ba-desck__cell {
+  padding: 50%;
+}
+
+.ba-desk__cell_dark {
+  background: #000;
+  position: relative;
+}
+
+.ba-desk__cell_light {
+  background: #ffffff;
+}
+
+.ba-desk__cell_dark:after {
+  content: '';
+  background: #c43c39;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+}
+
+.ba-desk__row:nth-child(4) .ba-desk__cell_dark:after,
+.ba-desk__row:nth-child(5) .ba-desk__cell_dark:after {
+  display: none;
+}
+
+.ba-desk__row:nth-child(1) .ba-desk__cell_dark:after,
+.ba-desk__row:nth-child(2) .ba-desk__cell_dark:after,
+.ba-desk__row:nth-child(3) .ba-desk__cell_dark:after {
+  background: #5b423a;
+}
